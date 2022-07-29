@@ -5,14 +5,15 @@
 body{
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(129, 233, 198);
+  background-color: #F6EABE;
+  min-height: 100vh;
 }
 
 .nav {
   display: flex;
   height: 100px;
   align-items: center;
-  background-color: rgb(21, 230, 160);
+  background-color: #F6D7A7;
   padding: 0 70px;
   justify-items: space-between;
   box-shadow: 0px 2px 10px black;
@@ -40,7 +41,7 @@ body{
 
 .footer {
   height: 70px;
-  background-color: rgb(47, 153, 118);
+  background-color: #C8E3D4;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -78,3 +79,58 @@ ul {
   width: 400px;
   margin: auto;
 }
+
+.desc {
+  background-color: rgb(196, 255, 235);
+  
+}
+
+.desc > h2{
+  background-color: #87AAAA;
+}
+
+.icon{
+  text-align: center;
+  margin: 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(45, 46, 45);
+  width: 60%;
+  margin: 15px auto;
+}
+
+.main{
+  padding: 120px 0;
+  width: 70%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: yellow;
+  border: none;
+}
+
+.form{
+
+}
+
+.inputs{
+  margin: 5px;
+}
+/*
+.items {
+  height: 100px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}*/

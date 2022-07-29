@@ -1,0 +1,46 @@
+{
+  "materials" : [
+    {
+      "id": 1,
+      "name": "One Bedroom",
+      "location": "Nanyuki Laikipia County",
+      "image": "https://i0.wp.com/tiny.houseplans-3d.com/wp-content/uploads/2019/12/Small-House-Plans-4.5x7.5-with-One-Bedroom-Gable-roof-2-scaled.jpg?fit=2560%2C1440&ssl=1"
+    },
+    {
+      "id": 2,
+      "name": "Two Bedroom",
+      "location": "Embu Town, Embu County",
+      "image": "https://i.pinimg.com/originals/e2/63/da/e263daf8d9801e83baaec9cb7e0f980b.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Three Bedroom",
+      "location": "Kitengela, Kajiado County",
+      "image": "https://images.familyhomeplans.com/cdn-cgi/image/fit=scale-down,quality=85/plans/41438/41438-b580.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Car Parking Shed",
+      "location": "Westlands, Nairobi County",
+      "image": "https://www.yjtents.com/wp-content/uploads/2021/08/Car-parking-shed-02_%E5%89%AF%E6%9C%AC.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dog Kernel",
+      "location": "Mlolongo, Machakos County",
+      "image": "https://media.istockphoto.com/photos/funny-pug-dog-in-the-dog-house-picture-id516461357?k=20&m=516461357&s=612x612&w=0&h=kQzKEbQkQ4AdGGkHzi4vjgRVbskI4yGVoqnmI2B329o="
+    },
+    {
+      "id": 6,
+      "name": "Poultry shed",
+      "location": "Naivasha, Nakuru County",
+      "image": "https://i.pinimg.com/736x/8b/c0/95/8bc0957b92f32ac91c1ad6bed94e08ad.jpg"
+    }, 
+    {
+      "id": 7,
+      "name": "Container Houses",
+      "location": "Nyali, Mombasa County",
+      "image": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/43dce9dc-acf6-4e50-a939-e9dabfaa3072-affordable-container-homes-for-sale-the-flagship.jpg"
+    }
+  ]
+}
