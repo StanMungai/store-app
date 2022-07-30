@@ -22,11 +22,14 @@ function App() {
       .then((response) => response.json())
       .then((items) => setItems(items))}, [])
 
+  function addProject(newProject) {
+    setItems([...items, newProject])
+  }    
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home items={items}/>}></Route>
+        <Route path='/' element={<Home items={items} onAddProject={addProject}/>}></Route>
         <Route path="/partners" element={<Partners />}/>
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
