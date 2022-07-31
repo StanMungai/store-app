@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     fetch("http://localhost:3000/projects")
       .then((response) => response.json())
-      .then((projects) => setProjects(projects))}, [])
+      .then((projects) => setProjects(projects))}, [projects])
 
   function addProject(newProject) {
     setProjects([...projects, newProject])
