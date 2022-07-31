@@ -10,7 +10,7 @@ function Form({onAddProject}) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    fetch("http://localhost:3000/materials", {
+    fetch("http://localhost:3000/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
