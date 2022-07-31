@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react'
 import Form from './Form'
 import Projects from './Projects'
 
+
 function Home() {
 
   const [projects, setProjects] = useState([])
+  
 
   useEffect(() => {
     fetch("https://ujenzico-ltd.herokuapp.com/projects")
       .then((response) => response.json())
       .then((projects) => setProjects(projects))}, [projects])
+
 
   function addProject(newProject) {
     setProjects([...projects, newProject])

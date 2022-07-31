@@ -1,21 +1,35 @@
-import React from 'react'
+import React,{ useState, useEffect } from 'react'
+import {FaCaretDown} from "react-icons/fa"
 
-function Partners({ onShowDetails }) {
+function Partners() {
+  const [partners, setPartners] = useState([])
+  const [hidden, setHidden] = useState(true)
+
+  function hideContent() {
+    setHidden(!hidden)
+  }
+
+  useEffect(() => {
+    fetch("https://ujenzico-ltd.herokuapp.com/partners")
+      .then((response) => response.json())
+      .then((partners) => setPartners(partners))
+  }, [])
+  
   return (
-   <section className='partners'>
-    <div className='desc'>
-    <h2>Simba Cement</h2>
-      <p>The leading cement manufacturing and marketing company in the Eastern Africa region, well reputed for our high quality operations, products and expansive capacity.</p>
-    </div>
-    <div className='desc'>
-      <h2>Mabati Rolling Mills</h2>
-      <p>An integrated Coated steel facility at Mariakani producing world class Coated and Painted Coated Steel products from which it manufactures a plethora of prestigious building solutions in its facilities across Kenya.</p>
-    </div>
-    <div className='desc'>
-      <h2>Crown Paints</h2>
-      <p>the most innovative paint company in East Africa, providing tailor-made solutions to the construction and retail segments of the market with innovative products, services and world-class after-sales support.</p>
-    </div>
-   </section> 
+    <section className='partners'>
+
+      <div className='desc'>
+        {partners.map((partner) =>(
+        <div key={partner.id} className='sub'>
+          <h2 className='coname' >{partner.company}<FaCaretDown onClick={hideContent} className='caret'/> </h2>
+          {hidden ? null :
+          <div className='content'>
+            {partner.description}
+          </div> }
+        </div>
+        ))}
+      </div>
+    </section>
   )
 }
 
