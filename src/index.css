@@ -11,7 +11,7 @@ body{
 
 .nav {
   display: flex;
-  height: 100px;
+  height: 100%;
   align-items: center;
   background-color: #F6D7A7;
   padding: 0 70px;
@@ -136,4 +136,19 @@ ul {
   padding: 10px;
   border-radius: 10px;
   border: none;
+}
+
+.plus-one {
+  display: inline-block;
+  margin: 3px;
+}
+
+.plus-one > button {
+  margin-right: 4px;
+}
+
+.like-btn{
+  margin-left: 2px;
+  border: none;
+  background-color: #F6EABE;
 }
