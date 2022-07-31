@@ -27,6 +27,7 @@ function Projects({project, onDeleteProject}) {
       <div className='container'>
         <h3>{project.name}</h3>
         <h4>{project.location}</h4>
+        <h5>Estimated Cost: {project.cost}</h5>
         <div className='plus-one' onClick={handleIncrement}>
           <button className='btn' ><FcLike/>Like</button>
           <button className='like-btn'>{countIncrement}</button>
@@ -38,6 +39,7 @@ function Projects({project, onDeleteProject}) {
         <button className='btn' onClick={handleDelete}>Remove</button>
       </div>
     </div>
+
   )
 }
 

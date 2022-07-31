@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "One Bedroom",
-      "location": "Nanyuki Laikipia County",
+      "location": "Nanyuki, Laikipia County",
       "cost": "KES 1.5 Million",
       "image": "https://i0.wp.com/tiny.houseplans-3d.com/wp-content/uploads/2019/12/Small-House-Plans-4.5x7.5-with-One-Bedroom-Gable-roof-2-scaled.jpg?fit=2560%2C1440&ssl=1"
     },
@@ -51,7 +51,7 @@
     },
     {
       "name": "Mansion",
-      "location": "Nyeri, Nyeri County",
+      "location": "Karatina, Nyeri County",
       "cost": "KES 13 Million",
       "image": "https://i.pinimg.com/originals/8f/c6/f7/8fc6f7319a45f87aeb4fbc9be96b9ff7.jpg",
       "id": 13

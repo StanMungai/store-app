@@ -6,7 +6,16 @@ body{
   margin: 0 auto;
   text-align: center;
   background-color: #F6EABE;
-  min-height: 100vh;
+  min-height: calc(100vh - 200px);
+}
+
+#title {
+  font-family: 'Cinzel';
+}
+
+#slogan {
+  font-family: 'Square Peg';
+  font-size: 30px;
 }
 
 .nav {
@@ -40,17 +49,23 @@ body{
 }
 
 .footer {
-  height: 70px;
+  margin-top: 0;
+  margin-bottom: -10px;
+  padding: 5px 0;
+  height: 100px;
+  background-color: #C8E3D4;
+  bottom: 0;
+  /* height: 6.5rem;
   background-color: #C8E3D4;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
 }
 
-.footer > h2 {
+/* .footer > h2 {
   margin-bottom: 0;
   line-height: 0.5rem;
-}
+} */
 
 .link {
   font-size: 22px;
@@ -104,10 +119,11 @@ ul {
 }
 
 .main{
-  padding: 120px 0;
+  padding: 30px 0;
   width: 70%;
   margin: auto;
-
+  margin-bottom: 40px;
+  min-height: 100vh;
 }
 
 .btn {
@@ -152,3 +168,10 @@ ul {
   border: none;
   background-color: #F6EABE;
 }
+
+.heading {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: "Roboto Slab";
+}
+

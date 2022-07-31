@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import {FcLike, FcDislike} from "react-icons/fc"
 import Form from './Form'
 import Projects from './Projects'
 
@@ -20,31 +19,12 @@ function Home() {
     setProjects(projects.filter((project) => project.id !== project))
   }
 
-  // function handleDelete(){
-  //   fetch(`http://localhost:3000/materials/${projects.id}`, {
-  //     method: "DELETE"
-  //   })
-  //     .then((response) => response.json())
-  //     .then(() => console.log("projects"))
-  // }
-
-
   return (
     <main className='main'>
+      <h2 className='heading'>Recently Proposed Projects</h2>
       <div>
         {projects.map((project) => (
-          // <div className='card' key={project.id}>
-          //   <img src={project.image} alt="projects" style={{width:"100%"}}/>
-          //   <div className='container'>
-          //     <h3>{project.name}</h3>
-          //     <h4>{project.location}</h4>
-          //     <button className='btn' ><FcLike/>Like</button>
-          //     {/* <button>{likes}</button> */}
-          //     <button className='btn'><FcDislike/>Dislike</button>
-          //     <button className='btn'>Remove</button>
-          //   </div>
-          // </div>
-        <Projects project={project} key={project.id} onDeleteProject={deleteProject}/>
+          <Projects project={project} key={project.id} onDeleteProject={deleteProject}/>
       ))}
       </div>
       <Form onAddProject={addProject}/>

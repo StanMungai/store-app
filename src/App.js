@@ -8,32 +8,6 @@ import Contacts from './components/Contacts';
 
 
 function App() {
-/*
-  const [details, setDetails] = useState(true)
-  function showDetails(){
-   // console.log('clicked')
-    setDetails(!details )
-  }
-*/
-  //const [likes, setLikes] = useState(0)
-  // const [projects, setProjects] = useState([])
-
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/materials")
-  //     .then((response) => response.json())
-  //     .then((projects) => setProjects(projects))}, [])
-
-  // function addProject(newProject) {
-  //   setProjects([...projects, newProject])
-  // }    
-
-  // function deleteProject(project) {
-  //   console.log(project)
-  // }
-
-  // function incrementLikes(){
-  //   setLikes((likes) => likes + 1)
-  // }
 
   return (
     <div className="App">
