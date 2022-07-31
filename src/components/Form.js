@@ -10,7 +10,7 @@ function Form({onAddProject}) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    fetch("http://localhost:3000/projects", {
+    fetch("https://ujenzico-ltd.herokuapp.com/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
