@@ -30,7 +30,7 @@ function Form({onAddProject}) {
 
   return (
     <form className='form' onSubmit={handleSubmit}>
-      <h2>Add your Project for vetting</h2>
+      <h2>Propose a Project for vetting</h2>
 
       <label>Name</label>
         <input 

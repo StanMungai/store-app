@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -15,21 +15,31 @@ function App() {
     setDetails(!details )
   }
 */
-  const [items, setItems] = useState([])
+  //const [likes, setLikes] = useState(0)
+  // const [projects, setProjects] = useState([])
 
-  useEffect(() => {
-    fetch("http://localhost:3000/materials")
-      .then((response) => response.json())
-      .then((items) => setItems(items))}, [])
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/materials")
+  //     .then((response) => response.json())
+  //     .then((projects) => setProjects(projects))}, [])
 
-  function addProject(newProject) {
-    setItems([...items, newProject])
-  }    
+  // function addProject(newProject) {
+  //   setProjects([...projects, newProject])
+  // }    
+
+  // function deleteProject(project) {
+  //   console.log(project)
+  // }
+
+  // function incrementLikes(){
+  //   setLikes((likes) => likes + 1)
+  // }
+
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home items={items} onAddProject={addProject}/>}></Route>
+        <Route path="/" element={<Home />}/>
         <Route path="/partners" element={<Partners />}/>
         <Route path="/contacts" element={<Contacts />} />
       </Routes>

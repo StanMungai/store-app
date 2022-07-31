@@ -1,22 +1,53 @@
-import React from 'react'
-import {FcLike, FcDislike} from "react-icons/fc"
+import React, { useState, useEffect } from 'react'
+// import {FcLike, FcDislike} from "react-icons/fc"
 import Form from './Form'
+import Projects from './Projects'
 
-function Home({items, onAddProject}) {
+function Home() {
+
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/materials")
+      .then((response) => response.json())
+      .then((projects) => setProjects(projects))}, [projects])
+
+  function addProject(newProject) {
+    setProjects([...projects, newProject])
+  }    
+
+  function deleteProject(project) {
+    setProjects(projects.filter((project) => project.id !== project))
+  }
+
+  // function handleDelete(){
+  //   fetch(`http://localhost:3000/materials/${projects.id}`, {
+  //     method: "DELETE"
+  //   })
+  //     .then((response) => response.json())
+  //     .then(() => console.log("projects"))
+  // }
+
+
   return (
     <main className='main'>
-      {items.map((item) => (
-        <div className='card' key={item.id}>
-          <img src={item.image} alt="items" style={{width:"100%"}}/>
-          <div className='container'>
-            <h3>{item.name}</h3>
-            <h4>{item.location}</h4>
-            <button className='btn'><FcLike/>Like</button>
-            <button className='btn'><FcDislike/>Dislike</button>
-          </div>
-        </div>
+      <div>
+        {projects.map((project) => (
+          // <div className='card' key={project.id}>
+          //   <img src={project.image} alt="projects" style={{width:"100%"}}/>
+          //   <div className='container'>
+          //     <h3>{project.name}</h3>
+          //     <h4>{project.location}</h4>
+          //     <button className='btn' ><FcLike/>Like</button>
+          //     {/* <button>{likes}</button> */}
+          //     <button className='btn'><FcDislike/>Dislike</button>
+          //     <button className='btn'>Remove</button>
+          //   </div>
+          // </div>
+        <Projects project={project} key={project.id} onDeleteProject={deleteProject}/>
       ))}
-      <Form onAddProject={onAddProject}/>
+      </div>
+      <Form onAddProject={addProject}/>
     </main>
   )
 }
