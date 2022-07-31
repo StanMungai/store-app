@@ -7,9 +7,9 @@ function Home() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/projects")
+    fetch("https://ujenzi-constructors-limited.herokuapp.com/projects")
       .then((response) => response.json())
-      .then((projects) => setProjects(projects))}, [projects])
+      .then((projects) => setProjects(projects))}, [])
 
   function addProject(newProject) {
     setProjects([...projects, newProject])

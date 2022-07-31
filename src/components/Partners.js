@@ -1,6 +1,4 @@
 import React from 'react'
-//import {FaMinus} from "react-icons/fa"
-//import Simba from './partners/Simba'
 
 function Partners({ onShowDetails }) {
   return (

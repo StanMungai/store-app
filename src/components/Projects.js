@@ -14,7 +14,7 @@ function Projects({project, onDeleteProject}) {
   }
 
   function handleDelete(){
-    fetch(`http://localhost:3000/projects/${project.id}`, {
+    fetch(`https://ujenzi-constructors-limited.herokuapp.com/projects/${project.id}`, {
       method: "DELETE"
     })
       .then((response) => response.json())
